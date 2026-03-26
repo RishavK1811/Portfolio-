@@ -78,14 +78,14 @@ document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
 
     const templateParams = {
-        to_email: 'rishavkumar181101@gmail.com',
         from_name: document.getElementById('name').value,
         from_email: document.getElementById('email').value,
         subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value
+        message: document.getElementById('message').value,
+        to_email: 'rishavkumar181101@gmail.com'
     };
 
-    emailjs.send('service_1909tnv', 'template_9wncnjx', templateParams)
+    emailjs.send('service_kzs7fpx', 'template_dkhpyrp', templateParams)
         .then(() => {
             showPopup("Message sent successfully ✅");
             document.querySelector('form').reset();
